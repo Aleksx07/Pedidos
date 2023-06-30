@@ -40,7 +40,10 @@ public abstract class OrdenesDatabase extends RoomDatabase {
                             dao.deleteAll();
 
                             //Llena valores por defectos en la base de datos
-                            //dao.insert();
+                            Pedido nuevo1 = new Pedido("Roberto Hernandes", "Residencial Agua Salada", "Entregado", "Dos cajas de leche" );
+                            Pedido nuevo2 = new Pedido("Susana Caballero", "Residencial Vistas Hermosa", "Entregado", "Una pizza suprema" );
+                            dao.insert(nuevo1);
+                            dao.insert(nuevo2);
 
                         });
                     }
